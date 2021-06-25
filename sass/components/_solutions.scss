@@ -2,22 +2,14 @@
 .solutions {
     padding-top: 0;
 }
-.subtitle {
-    margin: 0px auto 50px;
-    width: 390px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
 .solutions__item {
     display: flex;
 }
 .solutions__image {
     position: relative;
-}
-.solutions__image:not(:last-child) {
-    margin-right: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
+            }
 }
 .solutions__text {
     position: absolute;

@@ -2,8 +2,10 @@
 .client__list { 
     display: flex;
 }
-.client__item:not(:last-child) {
-    margin-right: 30px;
+.client__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
 }
 .client__link {
     display: flex;
@@ -16,16 +18,16 @@
     border-radius: 4px;
     transition: color 250ms var(--timing-function),
     border 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--color-main-blue);
+            border: 1px solid var(--color-main-blue);
+            }
 }
 .client__icon {
     fill: currentColor;
-}
-.client__link:hover,
-.client__link:focus {
-    color: var(--color-main-blue);
-    border: 1px solid var(--color-main-blue);
-}
-.client__icon:hover,
-.client__icon:focus {
-    fill: currentColor;
+        &:hover,
+        &:focus {
+            fill: currentColor;
+            }
 }

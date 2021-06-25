@@ -2,10 +2,12 @@
 .social {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;;
 }
-.social__list:not(:last-child) {
-    margin-right: 10px;
+.social__list {
+    &:not(:last-child) {
+        margin-right: 10px;
+        }
 }
 .social__link {
     display: flex;
@@ -17,19 +19,20 @@
     color: var(--color-icon-grey);
     transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            background-color: var(--color-main-blue);
+            color: var(--color-white);
+            }
 }
 .social__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     fill: currentColor;
+        &:hover,
+        &:focus {
+        fill: currentColor;
+        }
 }
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--color-main-blue);
-    color: var(--color-white);
-}
-.social__icon:hover,
-.social__icon:focus {
-    fill: currentColor;
-}
+

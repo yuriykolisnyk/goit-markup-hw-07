@@ -4,9 +4,9 @@
 }
 .features__list{
     width: 270px;
-}
-.features__list:not(:last-child) {
-    margin-right: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
+            }
 }
 .features__item {
     display: flex;

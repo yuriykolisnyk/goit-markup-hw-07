@@ -13,15 +13,13 @@
     color: var(--color-white);
     background-color: var(--color-main-blue);
     box-shadow: var(--color-box-shadow-button);
-    font-weight: 700;
-    letter-spacing: 0.06em; 
     transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
-}
-.button:hover,
-.button:focus {
-    color: var(--color-white);
-    background-color: var(--colot-secondary-blue);
-    box-shadow: var(--color-box-shadow-button);
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var(--colot-secondary-blue);
+            box-shadow: var(--color-box-shadow-button);
+            }
 }
