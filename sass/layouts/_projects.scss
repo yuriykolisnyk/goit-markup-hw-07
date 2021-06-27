@@ -53,6 +53,8 @@
     color: var(--color-white);
 }
 .project__overlay-background {
+    .project__box-shadow:hover &,
+    .project__box-shadow:focus &,
     .project__overlay-image:hover &,
     .project__overlay-image:focus &{
     opacity: 1;
